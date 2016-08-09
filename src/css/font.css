@@ -1,0 +1,27 @@
+@font-face
+{
+  font-family:'Noto Sans CJK SC Light';
+  src:url('../fonts/NotoSansCJKsc-Regular.eot');
+  url('../fonts/NotoSansCJKsc-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/NotoSansCJKsc-Regular.woff') format('woff'),
+  url('../fonts/NotoSansCJKsc-Regular.ttf') format('truetype'),
+  url('../fonts/NotoSansCJKsc-Regular.svg#webfontOTINA1xY') format('svg');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face {
+  font-family: 'Brown-Light';
+  src:url('../fonts/Brown-Light.otf');
+  src:url('../fonts/Brown-Light.otf') format('OpenType');
+  src:url('../fonts/Brown-Light.otf') format('OpenType');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Blue Sky Standard Light';
+  src:url('../fonts/BlueSkyStandardLight.otf');
+  src:url('../fonts/BlueSkyStandardLight.otf') format('OpenType');
+  src:url('../fonts/BlueSkyStandardLight.otf') format('OpenType');
+  font-weight: normal;
+  font-style: normal;
+}

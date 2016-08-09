@@ -1,0 +1,22 @@
+$imgRoot:'../images/';
+$color:#13d4c8;
+%cfx{
+  *zoom:1;
+  &:after{
+    content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0;
+  }
+}
+@mixin wh($w,$h){
+  width:$w+px;
+  height:$h+px;
+}
+@mixin bg($name){
+  background-image:url($imgRoot + $name) ;
+  background-repeat:no-repeat;
+}
+@mixin bgp($x,$y){
+  background-position:$x+px $y+px;
+}
+%bgc{
+  -webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover; background-size:cover;
+}

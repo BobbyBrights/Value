@@ -1,0 +1,373 @@
+@import "common";
+%shadow{
+  -webkit-box-shadow: 3px 0 10px rgba(130,130,130,.5); -moz-box-shadow: 3px 0 10px rgba(130,130,130,.5); box-shadow: 3px 0 10px rgba(130,130,130,.5);
+}
+/*
+[‎2016/‎8/‎4 15:41] Winnie Yan 严文婕:
+                    #1ad5ca     ——    #525ee4
+                    渐变颜色
+                    统一都为这个
+*/
+
+body{
+
+  @include bg('bd_bg.jpg');
+  @extend %bgc;
+  background-attachment:fixed;
+  background-position:center center;
+  height:100%;
+  height:2000px;
+}
+
+.header{
+  width:100%;
+  height:276px;
+  @include bg('hd_bg.jpg');
+  @extend %bgc;
+  background-position:center center;
+  margin:0 auto;
+  position:relative;
+  color:#fff;
+  font-size:20px;
+  .nav{
+    background:rgba(0,9,32,.5);@include wh(1326,80);
+    position:absolute;
+    bottom:0;
+    left:50%;
+    margin-left:-1326/2+px;
+    line-height:80px;
+    h2{
+      float:left;
+      margin-left:35px;
+    }
+    .menu{
+      float:right;
+      li{
+        float:left;
+        margin:0 35px;
+      }
+      .curr{
+        a{
+          border-bottom:2px solid $color;
+        }
+      }
+    }
+    a{
+      color:#fff;
+      display:block;
+      height:56px;
+      &:hover{
+        border-bottom:2px solid $color;
+      }
+    }
+  }
+}
+
+.bd{
+  width:1326px; margin:0 auto;;
+}
+.wrap{
+  float:left;
+}
+.left-wrap{ width:922px;}
+.right-wrap{ width:1326-922-20+px;}
+.box{
+  background:#f3f1f0;
+  @extend %shadow;
+}
+.me-top{
+  @extend %cfx;
+  height: 254px;
+  overflow: hidden;
+}
+.dashboard{
+  height:473px;
+  .inner{
+    padding:87px 80px 0;
+
+    .me{ width:134px; text-align:center; float:left; padding-right:43px; border-right:1px solid #d1d4d5;}
+    .header_img{
+      @include wh(105,105);
+      display:block;
+      margin:13px auto 5px;
+    }
+    .name{ font-size:20px; font-weight:bold; margin-bottom:20px; color:#000; display:block;}
+    .team{ color:#000;}
+    .leave{
+    }
+  }
+}
+.leave{
+  float:left; margin-left:168px;
+  position:relative;
+  width:180*2+px;
+  height:180*2+px;
+  @extend %cfx;
+}
+.run-board{
+  position:absolute;
+  width:100%;
+  height:360px;
+  z-index:9;
+  top:0;
+  left:0;
+  .panel{
+    width:50%;
+    display:block;
+    position:absolute;
+    top:180-8px;
+    left:0;
+    transform-origin:100% 50%;
+    i{
+      display:block;
+      width:35px;
+      height:17px;
+
+      @include bg('bg_l.png');
+
+    }
+  }
+  @for $i from  1 through  21{
+     .panel#{$i}.curr{
+       i{
+         background-image:url($imgRoot +"p"+ $i +".png");
+       }
+    }
+}
+
+}
+.run-ball{
+  width:240px;
+  height:240px;
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-left:-240/2+px;
+
+  margin-top:-240/2+px;
+
+}
+.circle{
+  width:240px;
+  height:240px;
+  -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%;
+  background:#f3f1f0;
+  border:4px solid #fff;
+  -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+
+}
+.ball{
+  text-align:center;
+  color:#000;
+  font-size:12px;
+  line-height:18px;
+  -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+  border:4px solid #fff;
+  position:absolute;
+  width:34px;
+  height:34px;
+  background:#f3f1f0;
+  -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%;
+  margin-top:-17px;
+  margin-left:-17px;
+  top:120+21px;
+  left:2px;
+  z-index:9;
+}
+.cover{
+  position:absolute;
+  background:#f3f1f0;
+  width:240px;
+  height:120px;
+  top:120+21px;
+  left:0;
+
+}
+.score{
+  position:absolute;
+  text-align:center;
+  width:360px;
+  top:122px;
+  p{
+    font-size:56px;
+  }
+}
+.curr_leave,.next_leave{
+  position:absolute;
+  left:0;
+  top:223px;
+  font-size:22px;
+}
+.curr_leave{ color:#79d2ca; left:0; margin-left:-20px;}
+.next_leave{ color:#5f7bda; right:0; margin-right:-20px; text-align:right;}
+.achivements{
+  position:relative;
+  h3{
+    font-size:20px;
+    line-height:24px;
+    i{
+      @include wh(3,14);
+      background:$color;
+      margin-right:10px;
+      display:inline-block;
+    }
+  }
+}
+%icon{
+  @include bg('sprite.png');
+
+}
+.ach-wrap{
+  margin-top:30px;
+  position:relative;
+  @include wh(750,60);
+}
+.ach-slide-wrap{
+@include wh(70*10,60);
+  margin:0 auto;
+}
+.ach-list{
+  @extend %cfx;
+  @include wh(1000,60);
+
+  li{
+    margin:0 10px;
+    @include wh(50,41);
+    float:left;
+    text-align:center;
+      position:relative;
+    .icon{
+      .arr{
+        @include bg('arr.png');
+        @include wh(39,20);
+        position:absolute;
+        top: 79px;
+        left: 7px;
+        display:none;
+      }
+      &:hover{
+        .arr{ display:block;}
+      }
+    }
+  }
+}
+.icon{
+  @extend %icon;
+  display:inline-block;
+}
+.ach1{
+  @include wh(56,39);
+  @include bgp(0,-21);
+  &:hover{
+    @include bgp(-65,-21);
+  }
+}
+.ach1.get{
+  @include bgp(-65,-21);
+}
+.ach2{
+  @include wh(39,41);
+  @include bgp(0,-68);
+  &:hover{
+    @include bgp(-65,-68);
+  }
+}
+.ach2.get{
+  @include bgp(-65,-68);
+}
+.ach3{
+  @include wh(35,40);
+  @include bgp(0,-118);
+  .get,&:hover{
+    @include bgp(-65,-118);
+  }
+}
+.ach3.get{
+  @include bgp(-65,-118);
+}
+.ach4{
+  @include wh(38,36);
+  @include bgp(0,-168);
+  &:hover{
+    @include bgp(-65,-168);
+  }
+}
+.ach4.get{
+  @include bgp(-65,-168);
+}
+.ach5{
+  @include wh(41,38);
+  @include bgp(0,-216);
+  &:hover{
+    @include bgp(-65,-216);
+  }
+}
+.ach5.get{
+  @include bgp(-65,-216);
+}
+.prev-btn,.next-btn{
+  @extend %icon;
+  @include wh(10,20);
+  position:absolute;
+  top:10px;
+}
+.prev-btn{
+  left:0;
+}
+.next-btn{
+  @include bgp(-14,0);
+  right:0;
+}
+
+
+.ach-desc{
+  z-index:99;
+  display:none;
+  @include wh(922,370);
+  background:#fff;
+  top: 98px;
+  left: -80px;
+  position: absolute;
+  ul{
+    padding-top:30px;
+    li{
+      .tit{
+        text-align:center; font-size:30px;
+      }
+      dl{
+        padding:75px 55px;
+        dt{
+          float:left;
+          margin-right:40px;
+        }
+        dd{
+          float:left;
+          width:640px;
+          h3{
+            margin-bottom:30px;
+          }
+          p{
+            font-size:16px;
+          }
+        }
+      }
+      display:none;
+    }
+    .curr{
+      display:block;
+    }
+  }
+}
+.index-slider-box{
+  @include wh(612,370);
+  margin-top:20px;
+
+}
+.index-slider-wrap{
+  @include wh(612,370);
+  overflow:hidden;
+  position:relative;
+
+}
+#canvas{
+}
