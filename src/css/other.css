@@ -1,0 +1,108 @@
+@charset "UTF-8";
+html, body {
+  font-size: 14px;
+  font-family: 'Blue Sky Standard Light'; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, textarea, p, blockquote, th, td, iframe, label, a {
+  margin: 0px;
+  padding: 0px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+ul {
+  list-style-type: none; }
+
+li {
+  list-style: none; }
+
+img {
+  border: 0px;
+  margin: 0px;
+  padding: 0px; }
+
+a, s {
+  text-decoration: none;
+  text-decoration: none;
+  outline: none; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clear {
+  clear: both;
+  float: none; }
+
+.box-list {
+  margin-bottom: 20px; }
+
+.box-news {
+  padding: 34px 60px 70px 60px; }
+  .box-news .news-title {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 54px; }
+  .box-news .news-img {
+    padding-bottom: 60px; }
+  .box-news .news-content p {
+    padding-bottom: 26px;
+    line-height: 23px;
+    font-size: 20px; }
+  .box-news .news-content .last-text {
+    padding-bottom: 0; }
+
+.news-lists {
+  width: 324px;
+  height: 700px;
+  padding: 0 30px;
+  margin-bottom: 26px;
+  overflow: hidden; }
+  .news-lists ul {
+    overflow: hidden; }
+  .news-lists li {
+    height: 34px;
+    padding: 15px 0;
+    border-bottom: 1px solid #dcdcdc; }
+  .news-lists .news-menu {
+    font-size: 18px;
+    width: 324px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .news-lists .news-date {
+    font-size: 14px;
+    color: #828282; }
+
+.list-title {
+  padding-bottom: 26px !important; }
+
+/*rules椤甸潰*/
+.rules-content {
+  padding: 40px 120px 120px; }
+  .rules-content h1 {
+    font-size: 30px;
+    padding-bottom: 60px;
+    text-align: center; }
+
+.rules-text p {
+  padding-bottom: 26px;
+  line-height: 23px;
+  font-size: 20px; }
+
+/*teams椤甸潰*/
+.teams-imgs {
+  padding: 40px 38px 40px 40px;
+  overflow: hidden; }
+  .teams-imgs li {
+    float: left;
+    padding: 0 3px 4px 0; }
+  .teams-imgs img {
+    width: 309px;
+    height: 232px; }
+
+/*# sourceMappingURL=other.css.map */

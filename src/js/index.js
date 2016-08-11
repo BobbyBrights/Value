@@ -33,7 +33,7 @@ $(function(){
         }
        $(".rankDiv:visible .top20-lists").slideToggle(1000);
     });
-    //滚动条插件调用
+    //首页滚动条插件调用
     $('.teams-ul').niceScroll(
         {
             arrows: false,
@@ -41,8 +41,7 @@ $(function(){
             cursorcolor: "#12d3c7",
             cursorborder: "none",
             cursorwidth: "3px",
-        }
-    );
+        });
     $('.rankDiv').niceScroll(
         {
             arrows: false,
@@ -50,7 +49,14 @@ $(function(){
             cursorcolor: "#12d3c7",
             cursorborder: "none",
             cursorwidth: "3px",
-        }
-    );
-    var count
+        });
+    //新闻内容页滚动条插件调用
+    $(".news-lists").niceScroll(
+        {
+            arrows: false,
+            touchbehavior: false,
+            cursorcolor: "#12d3c7",
+            cursorborder: "none",
+            cursorwidth: "3px",
+        });
 });
