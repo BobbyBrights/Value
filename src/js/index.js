@@ -25,6 +25,12 @@ $(function(){
     });
     //前20名显示隐藏
     $(".rank-top20").click(function(){
+        var $div = $(this);
+        if($div.hasClass('rank-top20')){
+            $div.removeClass('rank-top20').addClass('rank-close');
+        }else{
+            $div.removeClass('rank-close').addClass('rank-top20');
+        }
        $(".rankDiv:visible .top20-lists").slideToggle(1000);
     });
     //滚动条插件调用

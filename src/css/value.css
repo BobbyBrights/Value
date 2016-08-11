@@ -618,7 +618,21 @@ body {
   height: 30px;
   background-image: url("../images/top-rank.png");
   background-repeat: no-repeat;
-  background-size: 148px 12px;
+  background-size: 148px 25px;
+  margin: 0 auto 16px;
+  font-size: 14px;
+  text-align: center;
+  color: #13d4c8;
+  background-position: center bottom;
+  padding-top: 10px;
+  cursor: pointer; }
+
+.rank-close {
+  width: 148px;
+  height: 30px;
+  background-image: url("../images/close.png");
+  background-repeat: no-repeat;
+  background-size: 148px 25px;
   margin: 0 auto 16px;
   font-size: 14px;
   text-align: center;
@@ -653,11 +667,14 @@ body {
   height: 495px;
   margin: 40px auto 30px;
   overflow: hidden; }
-  .value-lists .lists-ul li {
+  .value-lists .lists-ul {
+    height: 488px;
     overflow: hidden; }
-  .value-lists .lists-ul p {
-    float: left;
-    font-size: 16px; }
+    .value-lists .lists-ul li {
+      height: 52px; }
+    .value-lists .lists-ul p {
+      float: left;
+      font-size: 16px; }
   .value-lists .value-date {
     width: 80px;
     height: 52px;
