@@ -513,62 +513,51 @@ position:relative;
 }
 .rank-top{
   @include wh(15,15);
+  @include bg('rank-icon.png');
+  @include bgp(0,-17);
   margin-left: 14px;
   margin-top: 12px;
-  background:url("../images/rank-icon.png") no-repeat;
-  background-position:0px -17px;
-  background-size:15px;
 }
 .rank-bottom{
   @include wh(15,15);
-  background:url("../images/rank-icon.png") no-repeat;
-  background-position:0px 0px;
-  background-size:15px;
+  @include bg('rank-icon.png');
+  @include bgp(0,0);
   margin-left: 14px;
   margin-top: 12px;
 }
 .rank-center{
   @include wh(15,15);
-  background:url("../images/rank-icon.png") no-repeat;
-  background-position:0px -34px;
+  @include bg('rank-icon.png');
+  @include bgp(0,-34);
   margin-left: 14px;
   margin-top: 16px;
 }
 .rank-top20{
-  @include wh(148,30);
-  background-image:url("../images/top-rank.png");
-  background-repeat:no-repeat;
-  background-size:148px 25px;
+  @include wh(148,25);
+  @include bg('top-rank.png');
+  @include bgp(0,0);
   margin:0 auto 16px;
   font-size:14px;
   text-align:center;
   color:$color;
-  background-position:center bottom;
   padding-top: 10px;
   cursor: pointer;
 }
 .rank-close{
-  @include wh(148,30);
-  background-image:url("../images/close.png");
-  background-repeat:no-repeat;
-  background-size:148px 25px;
+  @include wh(148,25);
+  @include bg('close.png');
+  @include bgp(0,0);
   margin:0 auto 16px;
   font-size:14px;
   text-align:center;
   color:$color;
-  background-position:center bottom;
   padding-top: 10px;
   cursor: pointer;
 }
 .rank-bg{
   @include wh(40,40);
-  background:url("../images/head-logo.png") no-repeat right 0;
-  background-size:40px;
-}
-.rank-new{
-  @include wh(40,40);
-  background:url("../images/head-logo.png") no-repeat right 0;
-  background-size:40px;
+  @include bg('head-logo.png');
+  @include bgp(0,0);
 }
 .left-bottom{margin-top: 20px;}
 .value-all{
@@ -600,8 +589,8 @@ position:relative;
   }
   .value-bg{
     @include wh(20,52);
-    background:url("../images/list.png") no-repeat center top;
-    background-size:20px 52px;
+    @include bg('list.png');
+    @include bgp(0,0);
     margin-right: 48px;
   }
   .value-last{
@@ -643,7 +632,8 @@ position:relative;
   .teams-num{text-align:center;padding-right:10px;}
   .teams-pic{
     @include wh(40,40);
-    background:url("../images/teams-pic.jpg") no-repeat center;
+    @include bg('teams-pic.jpg');
+    @include bgp(0,0);
     margin-right:10px;
   }
   .processDiv{
@@ -678,8 +668,9 @@ position:relative;
   }
   .teams-bg{
     @include wh(15,15);
+    @include bg('rank-icon.png');
+    @include bgp(0,-17);
     margin-top:12px;
-    background:url("../images/rank-icon.png") no-repeat 0 -17px;
   }
 }
 .value-menu{
@@ -747,26 +738,24 @@ position:relative;
   color:$color;
 }
 .prevIcon{
+  @include wh(22,34);
+  @include bg('star.png');
+  @include bgp(-34,-68);
   display:block;
   position:absolute;
   top:170px;
   left:6px;
   cursor:pointer;
-  width: 22px;
-  height: 34px;
-  background: url(../images/star.png) no-repeat;
   z-index:10;
-  background-position: -34px -68px;
 }
 .nextIcon{
+  @include wh(22,34);
+  @include bg('star.png');
+  @include bgp(-62,-68);
   display:block;
   position:absolute;
   top:170px;
   right:6px;
   cursor:pointer;
-  width: 22px;
-  height: 34px;
-  background: url(../images/star.png) no-repeat;
   z-index:10;
-  background-position: -62px -68px;
 }

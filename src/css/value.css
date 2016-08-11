@@ -590,68 +590,62 @@ body {
 .rank-top {
   width: 15px;
   height: 15px;
-  margin-left: 14px;
-  margin-top: 12px;
-  background: url("../images/rank-icon.png") no-repeat;
+  background-image: url("../images/rank-icon.png");
+  background-repeat: no-repeat;
   background-position: 0px -17px;
-  background-size: 15px; }
+  margin-left: 14px;
+  margin-top: 12px; }
 
 .rank-bottom {
   width: 15px;
   height: 15px;
-  background: url("../images/rank-icon.png") no-repeat;
+  background-image: url("../images/rank-icon.png");
+  background-repeat: no-repeat;
   background-position: 0px 0px;
-  background-size: 15px;
   margin-left: 14px;
   margin-top: 12px; }
 
 .rank-center {
   width: 15px;
   height: 15px;
-  background: url("../images/rank-icon.png") no-repeat;
+  background-image: url("../images/rank-icon.png");
+  background-repeat: no-repeat;
   background-position: 0px -34px;
   margin-left: 14px;
   margin-top: 16px; }
 
 .rank-top20 {
   width: 148px;
-  height: 30px;
+  height: 25px;
   background-image: url("../images/top-rank.png");
   background-repeat: no-repeat;
-  background-size: 148px 25px;
+  background-position: 0px 0px;
   margin: 0 auto 16px;
   font-size: 14px;
   text-align: center;
   color: #13d4c8;
-  background-position: center bottom;
   padding-top: 10px;
   cursor: pointer; }
 
 .rank-close {
   width: 148px;
-  height: 30px;
+  height: 25px;
   background-image: url("../images/close.png");
   background-repeat: no-repeat;
-  background-size: 148px 25px;
+  background-position: 0px 0px;
   margin: 0 auto 16px;
   font-size: 14px;
   text-align: center;
   color: #13d4c8;
-  background-position: center bottom;
   padding-top: 10px;
   cursor: pointer; }
 
 .rank-bg {
   width: 40px;
   height: 40px;
-  background: url("../images/head-logo.png") no-repeat right 0;
-  background-size: 40px; }
-
-.rank-new {
-  width: 40px;
-  height: 40px;
-  background: url("../images/head-logo.png") no-repeat right 0;
-  background-size: 40px; }
+  background-image: url("../images/head-logo.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px; }
 
 .left-bottom {
   margin-top: 20px; }
@@ -683,8 +677,9 @@ body {
   .value-lists .value-bg {
     width: 20px;
     height: 52px;
-    background: url("../images/list.png") no-repeat center top;
-    background-size: 20px 52px;
+    background-image: url("../images/list.png");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
     margin-right: 48px; }
   .value-lists .value-last {
     /*background:url("../images/value-last.png") no-repeat right top;
@@ -726,7 +721,9 @@ body {
   .teams-ul .teams-pic {
     width: 40px;
     height: 40px;
-    background: url("../images/teams-pic.jpg") no-repeat center;
+    background-image: url("../images/teams-pic.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
     margin-right: 10px; }
   .teams-ul .processDiv {
     float: left;
@@ -768,8 +765,10 @@ body {
   .teams-ul .teams-bg {
     width: 15px;
     height: 15px;
-    margin-top: 12px;
-    background: url("../images/rank-icon.png") no-repeat 0 -17px; }
+    background-image: url("../images/rank-icon.png");
+    background-repeat: no-repeat;
+    background-position: 0px -17px;
+    margin-top: 12px; }
 
 .value-menu {
   width: 40px;
@@ -913,27 +912,29 @@ body {
   color: #13d4c8; }
 
 .prevIcon {
+  width: 22px;
+  height: 34px;
+  background-image: url("../images/star.png");
+  background-repeat: no-repeat;
+  background-position: -34px -68px;
   display: block;
   position: absolute;
   top: 170px;
   left: 6px;
   cursor: pointer;
-  width: 22px;
-  height: 34px;
-  background: url(../images/star.png) no-repeat;
-  z-index: 10;
-  background-position: -34px -68px; }
+  z-index: 10; }
 
 .nextIcon {
+  width: 22px;
+  height: 34px;
+  background-image: url("../images/star.png");
+  background-repeat: no-repeat;
+  background-position: -62px -68px;
   display: block;
   position: absolute;
   top: 170px;
   right: 6px;
   cursor: pointer;
-  width: 22px;
-  height: 34px;
-  background: url(../images/star.png) no-repeat;
-  z-index: 10;
-  background-position: -62px -68px; }
+  z-index: 10; }
 
 /*# sourceMappingURL=value.css.map */
