@@ -469,7 +469,11 @@ body {
 #index-slider a:hover .img-mask {
   display: block;
   height: 100px;
-  -webkit-animation: slideup 0.5s; }
+  -webkit-animation: slideup 0.5s;
+  -moz-animation: slideup 0.5s;
+  -ms-animation: slideup 0.5s;
+  -o-animation: slideup 0.5s;
+  animation: slideup 0.5s; }
 
 @keyframes slideup {
   from {
@@ -661,7 +665,7 @@ body {
     text-align: right; }
   .value-lists .value-bg {
     width: 20px;
-    height: 20px;
+    height: 52px;
     background: url("../images/list.png") no-repeat center top;
     background-size: 20px 52px;
     margin-right: 48px; }
@@ -714,6 +718,10 @@ body {
     margin: 12px 8px 12px 0; }
   .teams-ul .teams-process {
     height: 20px;
+    background: -moz-linear-gradient(45deg, rgba(26, 212, 202, 0.8) 0%, #63a1e1 60%, #747ee9 100%);
+    background: -webkit-linear-gradient(45deg, rgba(26, 212, 202, 0.8) 0%, #63a1e1 60%, #747ee9 100%);
+    background: -ms-linear-gradient(45deg, rgba(26, 212, 202, 0.8) 0%, #63a1e1 60%, #747ee9 100%);
+    background: -o-linear-gradient(45deg, rgba(26, 212, 202, 0.8) 0%, #63a1e1 60%, #747ee9 100%);
     background: linear-gradient(45deg, rgba(26, 212, 202, 0.8) 0%, #63a1e1 60%, #747ee9 100%);
     position: absolute; }
   .teams-ul .process-100 {
@@ -886,5 +894,29 @@ body {
 
 .list-selected {
   color: #13d4c8; }
+
+.prevIcon {
+  display: block;
+  position: absolute;
+  top: 170px;
+  left: 6px;
+  cursor: pointer;
+  width: 22px;
+  height: 34px;
+  background: url(../images/star.png) no-repeat;
+  z-index: 10;
+  background-position: -34px -68px; }
+
+.nextIcon {
+  display: block;
+  position: absolute;
+  top: 170px;
+  right: 6px;
+  cursor: pointer;
+  width: 22px;
+  height: 34px;
+  background: url(../images/star.png) no-repeat;
+  z-index: 10;
+  background-position: -62px -68px; }
 
 /*# sourceMappingURL=value.css.map */

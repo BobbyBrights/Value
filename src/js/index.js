@@ -46,4 +46,5 @@ $(function(){
             cursorwidth: "3px",
         }
     );
+    var count
 });

@@ -385,6 +385,10 @@ position:relative;
   display:block;
   height:100px;
   -webkit-animation:slideup .5s ;
+  -moz-animation:slideup .5s ;
+  -ms-animation:slideup .5s ;
+  -o-animation:slideup .5s ;
+  animation:slideup .5s ;
 }
 @keyframes slideup
 {
@@ -580,7 +584,7 @@ position:relative;
     text-align:right;
   }
   .value-bg{
-    @include wh(20,20);
+    @include wh(20,52);
     background:url("../images/list.png") no-repeat center top;
     background-size:20px 52px;
     margin-right: 48px;
@@ -635,6 +639,10 @@ position:relative;
   }
   .teams-process{
     height:20px;
+    background:-moz-linear-gradient(45deg, rgba(26,212,202,0.8)0%, #63a1e1 60%,#747ee9 100%);
+    background:-webkit-linear-gradient(45deg, rgba(26,212,202,0.8)0%, #63a1e1 60%,#747ee9 100%);
+    background:-ms-linear-gradient(45deg, rgba(26,212,202,0.8)0%, #63a1e1 60%,#747ee9 100%);
+    background:-o-linear-gradient(45deg, rgba(26,212,202,0.8)0%, #63a1e1 60%,#747ee9 100%);
     background:linear-gradient(45deg, rgba(26,212,202,0.8)0%, #63a1e1 60%,#747ee9 100%);
     position:absolute;
   }
@@ -722,4 +730,28 @@ position:relative;
 }
 .list-selected{
   color:$color;
+}
+.prevIcon{
+  display:block;
+  position:absolute;
+  top:170px;
+  left:6px;
+  cursor:pointer;
+  width: 22px;
+  height: 34px;
+  background: url(../images/star.png) no-repeat;
+  z-index:10;
+  background-position: -34px -68px;
+}
+.nextIcon{
+  display:block;
+  position:absolute;
+  top:170px;
+  right:6px;
+  cursor:pointer;
+  width: 22px;
+  height: 34px;
+  background: url(../images/star.png) no-repeat;
+  z-index:10;
+  background-position: -62px -68px;
 }
