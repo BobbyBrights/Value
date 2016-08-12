@@ -96,13 +96,14 @@ a, s {
 
 /*teams椤甸潰*/
 .teams-imgs {
-  padding: 40px 38px 40px 40px;
+  padding: 40px 37px 37px 40px;
   overflow: hidden; }
   .teams-imgs li {
     float: left;
-    padding: 0 3px 4px 0; }
+    padding: 0 3px 3px 0; }
   .teams-imgs img {
     width: 309px;
-    height: 232px; }
+    height: 232px;
+    display: block; }
 
 /*# sourceMappingURL=other.css.map */

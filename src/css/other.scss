@@ -69,7 +69,7 @@
 }
 /*teams页面*/
 .teams-imgs{
-  padding:40px 38px 40px 40px;
+  padding:40px 37px 37px 40px;
   overflow:hidden;
   li{
     float:left;
@@ -77,5 +77,6 @@
   }
 img{
   @include wh(309,232);
+  display: block;
 }
 }
