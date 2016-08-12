@@ -53,9 +53,9 @@ a, s {
   float: none; }
 
 .box {
-  -webkit-box-shadow: 3px 0 10px rgba(130, 130, 130, 0.5);
-  -moz-box-shadow: 3px 0 10px rgba(130, 130, 130, 0.5);
-  box-shadow: 3px 0 10px rgba(130, 130, 130, 0.5); }
+  -webkit-box-shadow: 10px 10px 10px rgba(130, 130, 130, 0.5);
+  -moz-box-shadow: 10px 10px 10px rgba(130, 130, 130, 0.5);
+  box-shadow: 10px 10px 10px rgba(130, 130, 130, 0.5); }
 
 body {
   background-image: url("../images/bd_bg.jpg");
@@ -495,7 +495,7 @@ body {
   margin-top: 20px;
   padding: 21px 22px 10px 35px;
   float: right; }
-  .tips-box .tip-header > div {
+  .tips-box .tip-header i {
     width: 3px;
     height: 15px;
     background-color: #13d4c8;
@@ -902,7 +902,7 @@ body {
   float: left;
   font-size: 16px; }
 .menu-tabs .menu-title {
-  padding: 0 30px; }
+  padding: 0 58px; }
 .menu-tabs .tips-split {
   width: 2px;
   height: 14px;

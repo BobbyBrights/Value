@@ -106,4 +106,83 @@ a, s {
     height: 232px;
     display: block; }
 
+/*teams detail椤甸潰*/
+.detail-inner {
+  padding: 60px 70px 50px;
+  overflow: hidden; }
+
+.detail-left {
+  width: 264px;
+  float: left;
+  border-right: 1px solid #9e9f9f;
+  padding-right: 72px; }
+  .detail-left .detail-title {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 21px;
+    font-weight: bold; }
+
+.detail-img {
+  width: 262px;
+  height: 262px;
+  text-align: center;
+  margin: 0 auto; }
+
+.detail-img img {
+  width: 262px;
+  height: 262px;
+  display: block; }
+
+.detail-text {
+  margin-top: 58px; }
+  .detail-text .detail-text-top {
+    font-size: 21px; }
+    .detail-text .detail-text-top i {
+      width: 3px;
+      height: 14px;
+      background: #13d4c8;
+      margin-right: 10px;
+      display: inline-block; }
+  .detail-text .detail-text-bottom {
+    margin-top: 24px;
+    font-size: 17px;
+    line-height: 21px;
+    max-height: 250px;
+    overflow: hidden; }
+
+.detail-right {
+  margin-left: 68px;
+  float: left; }
+  .detail-right .detail-right-top {
+    margin-left: 200px; }
+  .detail-right h1 {
+    font-size: 30px; }
+
+.detail-right-rank {
+  padding-top: 27px;
+  overflow: hidden;
+  text-align: center; }
+  .detail-right-rank i {
+    width: 35px;
+    height: 35px;
+    background-image: url("../images/up-arrow.png");
+    background-repeat: no-repeat;
+    margin: 8px 15px 0 0;
+    float: left; }
+  .detail-right-rank h1 {
+    float: left;
+    font-size: 50px;
+    color: #13d4c8; }
+  .detail-right-rank .detail-rank-num {
+    padding-right: 100px; }
+
+.detail-right-table {
+  width: 780px;
+  height: 483px;
+  background-color: #ccc;
+  margin-top: 55px; }
+
+.board {
+  margin-top: 20px; }
+
 /*# sourceMappingURL=other.css.map */
